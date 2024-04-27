@@ -1,17 +1,20 @@
 {
 	"name": "simkl-node",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "",
 	"main": "index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "tsup src/index.ts --dts --format cjs,esm",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"lint": "tsc"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "MIT",
 	"devDependencies": {
 		"@biomejs/biome": "^1.7.1",
+		"@changesets/cli": "^2.27.1",
 		"tsup": "^8.0.2",
 		"typescript": "^5.4.5"
 	}
