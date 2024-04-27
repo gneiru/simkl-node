@@ -12,7 +12,8 @@
   "scripts": {
     "fmt": "pnpm biome format . --write && pnpm biome check . --apply-unsafe",
     "build": "tsup src/index.ts --dts --format cjs,esm",
-    "lint": "tsc"
+    "lint": "tsc",
+    "release": "pnpm run build && changeset publish"
   },
   "keywords": [
     "simkl",
