@@ -1,5 +1,11 @@
 # simkl-node
 
+## 0.2.0
+
+### Minor Changes
+
+- bed4888: Moved `simkl-node/simkl` to `simkl-node`
+
 ## 0.1.1
 
 ### Patch Changes

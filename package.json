@@ -1,6 +1,6 @@
 {
   "name": "simkl-node",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "Rohi <n@rohi.dev>",
   "publishConfig": {
     "access": "public"
@@ -28,7 +28,12 @@
     "lint": "tsc",
     "release": "pnpm run build && changeset publish"
   },
-  "keywords": ["simkl", "anime", "api", "node"],
+  "keywords": [
+    "simkl",
+    "anime",
+    "api",
+    "node"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "^1.7.1",
