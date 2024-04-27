@@ -1,5 +1,7 @@
 import { defaultError } from "./constants";
-import type { ErrorResponse, SearchResult, SeriesType } from "./types";
+import type { ErrorResponse } from "../types";
+import type { SearchResult } from "../types/anime";
+import type { SeriesType } from "../types/simkl";
 
 export default class Simkl {
   protected client_id = "";

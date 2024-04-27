@@ -1,9 +1,4 @@
-export type ErrorResponse = {
-  error: string;
-  message: string;
-};
-
-export type SeriesType = "movie" | "anime" | "tv";
+import type { SeriesType } from "./simkl";
 
 export type SearchResult = {
   title: string;
@@ -57,3 +52,5 @@ export type TrendingAnime = {
   total_episodes: number;
   network: string | null;
 };
+
+export type AnimeSeriesType = "movies" | "ovas" | "music" | "onas" | "tv";
