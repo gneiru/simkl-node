@@ -22,7 +22,7 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: 7
-      - name: Setup Node version to 20
+      - name: Setup Node version to 16
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
@@ -32,6 +32,8 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
+          title: "chore: version release"
+          commit: "chore: version release"
           publish: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
