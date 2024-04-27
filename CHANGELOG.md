@@ -1,5 +1,11 @@
 # simkl-node
 
+## 0.1.1
+
+### Patch Changes
+
+- 7dc1fa8: fix: exports
+
 ## 0.1.0
 
 ### Minor Changes
