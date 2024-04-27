@@ -11,6 +11,8 @@ npm install simkl-node
 ## Usage
 
 ```ts
+import { Anime } from "simkl-node/anime";
+
 const anime = new ANIME('YOUR_CLIENT_ID');
 
 // Get the top anime series
