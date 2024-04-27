@@ -1,1 +1,1 @@
-export * from "@/simkl";
+export { default as Simkl } from "./simkl/index";

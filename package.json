@@ -2,6 +2,7 @@
   "name": "simkl-node",
   "version": "0.2.0",
   "author": "Rohi <n@rohi.dev>",
+  "type": "module",
   "publishConfig": {
     "access": "public"
   },
@@ -9,36 +10,36 @@
     "type": "git",
     "url": "https://github.com/gneiru/simkl-node.git"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "files": ["./dist"],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
     "./anime": {
-      "default": "./dist/anime/index.js",
+      "import": "./dist/anime/index.js",
       "types": "./dist/anime/index.d.ts"
     },
     "./types": {
-      "default": "./dist/types/index.js",
+      "import": "./dist/types/index.js",
       "types": "./dist/types/index.d.ts"
     }
   },
   "scripts": {
     "fmt": "pnpm biome format . --write && pnpm biome check . --apply-unsafe",
-    "build": "rm -rf dist && tsup",
+    "build": "tsup",
     "lint": "tsc",
     "release": "pnpm run build && changeset publish"
   },
-  "keywords": [
-    "simkl",
-    "anime",
-    "api",
-    "node"
-  ],
+  "keywords": ["simkl", "anime", "api", "node"],
   "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "^1.7.1",
     "@changesets/cli": "^2.27.1",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
-  }
+  },
+  "dependencies": {}
 }

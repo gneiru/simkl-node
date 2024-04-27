@@ -1,6 +1,6 @@
-import { type ErrorResponse, defaultError } from "@/lib/constants";
-import type { SearchResult } from "@/types/anime";
-import type { SeriesType } from "@/types/simkl";
+import { type ErrorResponse, defaultError } from "../lib/constants";
+import type { SearchResult } from "../types/anime";
+import type { SeriesType } from "../types/simkl";
 
 export default class Simkl {
   protected client_id = "";
