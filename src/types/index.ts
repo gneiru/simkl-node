@@ -1,4 +1,2 @@
-export type ErrorResponse = {
-  error: string;
-  message: string;
-};
+export * from "./anime";
+export * from "./simkl";

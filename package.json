@@ -11,16 +11,11 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "fmt": "pnpm biome format . --write && pnpm biome check . --apply-unsafe",
-    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "build": "rm -rf dist && tsup",
     "lint": "tsc",
     "release": "pnpm run build && changeset publish"
   },
-  "keywords": [
-    "simkl",
-    "anime",
-    "api",
-    "node"
-  ],
+  "keywords": ["simkl", "anime", "api", "node"],
   "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "^1.7.1",

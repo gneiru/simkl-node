@@ -1,11 +1,10 @@
-import { defaultError } from "./constants";
-import Simkl from "./simkl";
+import { type ErrorResponse, defaultError } from "@/lib/constants";
+import Simkl from "@/simkl";
 import type {
   AnimeDetail,
   AnimeSeriesType,
   TrendingAnime,
-} from "../types/anime";
-import type { ErrorResponse } from "../types";
+} from "@/types/anime";
 
 export default class Anime extends Simkl {
   async searchByText(q: string) {
