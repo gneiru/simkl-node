@@ -2,4 +2,5 @@
 "simkl-node": patch
 ---
 
-tidy up type exports
+- unexport some types
+- add `best` method to `Anime` class

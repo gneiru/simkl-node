@@ -1,6 +1,11 @@
 import { defaultError } from "./constants";
 import Simkl from "./simkl";
-import type { AnimeDetail, ErrorResponse, TrendingAnime } from "./types";
+import type {
+  AnimeDetail,
+  AnimeSeriesType,
+  TrendingAnime,
+} from "../types/anime";
+import type { ErrorResponse } from "../types";
 
 export default class Anime extends Simkl {
   async searchByText(q: string) {
@@ -27,6 +32,23 @@ export default class Anime extends Simkl {
 
   async trending() {
     const url = this.getUrl("/anime/trending");
+    try {
+      const res = await fetch(url);
+      if (!res.ok) {
+        return (await res.json()) as ErrorResponse;
+      }
+      return (await res.json()) as Array<TrendingAnime>;
+    } catch (error) {
+      return defaultError;
+    }
+  }
+
+  async best(
+    filter: "best" | "all" | "month" | "year" | "voted" | "watched" = "best",
+    type: "all" | AnimeSeriesType = "all",
+  ) {
+    const url = this.getUrl(`/anime/best/${filter}`);
+    url.searchParams.set("type", type);
     try {
       const res = await fetch(url);
       if (!res.ok) {
