@@ -1,24 +1,25 @@
 {
-	"name": "simkl-node",
-	"version": "0.0.1",
-	"author": "gneiru",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/gneiru/simkl-node.git"
-	},
-	"main": "index.js",
-	"module": "dist/index.mjs",
-	"types": "dist/index.d.ts",
-	"scripts": {
-		"build": "tsup src/index.ts --dts --format cjs,esm",
-		"lint": "tsc"
-	},
-	"keywords": ["simkl", "anime", "api", "node"],
-	"license": "MIT",
-	"devDependencies": {
-		"@biomejs/biome": "^1.7.1",
-		"@changesets/cli": "^2.27.1",
-		"tsup": "^8.0.2",
-		"typescript": "^5.4.5"
-	}
+  "name": "simkl-node",
+  "version": "0.0.1",
+  "author": "gneiru",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gneiru/simkl-node.git"
+  },
+  "main": "index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "fmt": "pnpm biome format . --write && pnpm biome check . --apply-unsafe",
+    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "lint": "tsc"
+  },
+  "keywords": ["simkl", "anime", "api", "node"],
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.1",
+    "@changesets/cli": "^2.27.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
 }
