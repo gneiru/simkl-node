@@ -1,7 +1,11 @@
 {
 	"name": "simkl-node",
 	"version": "0.0.1",
-	"description": "",
+	"author": "gneiru",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gneiru/simkl-node.git"
+	},
 	"main": "index.js",
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
@@ -9,8 +13,7 @@
 		"build": "tsup src/index.ts --dts --format cjs,esm",
 		"lint": "tsc"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": ["simkl", "anime", "api", "node"],
 	"license": "MIT",
 	"devDependencies": {
 		"@biomejs/biome": "^1.7.1",
