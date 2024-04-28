@@ -1,6 +1,6 @@
 {
   "name": "simkl-node",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "Rohi <n@rohi.dev>",
   "publishConfig": {
     "access": "public"
@@ -35,7 +35,12 @@
     "lint": "tsc",
     "release": "pnpm run build && changeset publish"
   },
-  "keywords": ["simkl", "anime", "api", "node"],
+  "keywords": [
+    "simkl",
+    "anime",
+    "api",
+    "node"
+  ],
   "bugs": {
     "url": "https://github.com/gneiru/simkl-node/issues"
   },
