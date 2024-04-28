@@ -6,7 +6,7 @@ import type {
   TrendingAnime,
 } from "../types/anime";
 
-export default class Anime extends Simkl {
+export class Anime extends Simkl {
   async searchByText(q: string) {
     return super.searchByText(q, "anime");
   }

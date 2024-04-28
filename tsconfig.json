@@ -1,12 +1,20 @@
 {
   "compilerOptions": {
-    "target": "ES2016",
-    "module": "commonjs",
+    "target": "ESNext",
+    "module": "NodeNext",
+    "allowJs": true,
+    "outDir": "./dist",
+    "rootDir": "./",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "noUncheckedIndexedAccess": true,
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": ".",
+    "moduleResolution": "NodeNext",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   }
 }
