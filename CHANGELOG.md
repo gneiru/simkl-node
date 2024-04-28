@@ -1,5 +1,23 @@
 # simkl-node
 
+## 0.2.2
+
+### Patch Changes
+
+- 7679d68: - Fixes import from simkl/anime
+
+  ## Before
+
+  ```ts
+  import Anime from "simkl-node/anime";
+  ```
+
+  ## After
+
+  ```ts
+  import { Anime } from "simkl-node/anime";
+  ```
+
 ## 0.2.1
 
 ### Patch Changes
