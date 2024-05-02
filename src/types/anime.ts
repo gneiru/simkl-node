@@ -54,3 +54,14 @@ export type TrendingAnime = {
 };
 
 export type AnimeSeriesType = "movies" | "ovas" | "music" | "onas" | "tv";
+
+export interface Episode {
+  episode: number;
+  type: "special" | "episode";
+  aired: boolean;
+  img: null | string;
+  date: Date;
+  ids: {
+    simkl_id: number;
+  };
+}
