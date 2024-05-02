@@ -1,5 +1,22 @@
 # simkl-node
 
+## 0.2.3
+
+### Patch Changes
+
+- 4db44ec: Added Episodes method
+
+  ## Usage
+
+  ```ts
+  import { Anime } from "simkl-node/anime";
+
+  const anime = new ANIME("YOUR_CLIENT_ID");
+
+  // Get the episodes of an anime
+  const episodes = await anime.episodes("simkl_anime_id");
+  ```
+
 ## 0.2.2
 
 ### Patch Changes
